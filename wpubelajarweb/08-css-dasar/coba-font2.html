@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coba CSS - Font Styling</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Gorditas:wght@400;700&display=swap');
+
+            @font-face {
+                font-family: "lobster";
+                src: url("fonts/Lobster-Regular.ttf") format("truetype");
+                font-weight: normal;
+                font-style: normal;
+                font-display: swap;
+            }
+        h1 {
+            color:aqua;
+            font-size: 60px;
+            text-align: center;
+            font-family: "Gorditas", sans-serif;
+        }
+
+        p {
+            color: navy;
+            font-size: 30px;
+            text-align: center;
+            font-family:"Emilys Candy", serif;
+        }
+
+        .font-lobster {
+            font-family: "lobster", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>HEllo World</h1>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Voluptatum illum sunt delectus necessitatibus velit sint a iusto rem deleniti provident.
+    </p>
+    <p class="font-lobster">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Ex natus voluptas sint nostrum cumque sequi expedita illum praesentium dolore provident.
+    </p>
+</body>
+</html>
