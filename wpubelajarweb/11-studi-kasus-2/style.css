@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+header {
+    background-color: plum;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+header .genre-tags {
+    margin-top: 10px;
+}
+
+header .genre-tags .tag {
+    display: inline-block;
+    background-color: lightblue;
+    color: #333;
+    padding: 6px 16px;
+    margin: 0 5px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    border: 3px dashed rgba(255, 255, 255, 0.8);
+}
+
+main {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main .profile-card {
+    background-image: url('assets/images/backgroundprofil.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+    margin: 30px 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+main .profile-card .artist-photo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid pink;
+    margin-bottom: 20px;
+}
+
+main .profile-card .bio {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+main .profile-card .bio p {
+    margin-bottom: 15px;
+    font-style: italic;
+    color: #555;
+    background-color: #f9f8f8;
+    padding: 15px;
+    border-left: 6px solid pink;
+    display: inline-block;
+}
+
+main .profile-card .stats {
+    margin-top: 30px;
+}
+
+main .profile-card .stats .stat-item {
+    display: inline-block;
+    width: 150px;
+    padding: 20px;
+    background-color: #f9f8f8;
+    margin: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid #a9f2ff;
+}
+
+main .profile-card .stats .stat-item .stat-value {
+    font-size: 2em;
+    font-weight: bold;
+    color: pink;
+}
+
+main .profile-card .stats .stat-item .stat-label {
+    font-size: 0.9em;
+    color: #666;
+}
+
+main .discography {
+    margin: 50px;
+}
+
+main .discography h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+main .discography .album-list {
+    text-align: center;
+}
+
+main .discography .album-list .album-card {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 200px;
+    margin: 15px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 4px dashed lightgoldenrodyellow;
+    border-radius: 18px;
+}
+
+main .discography .album-list .album-card:nth-child(1) {
+    background-image: url('assets/images-background/backgroundsour.png');
+    background-size: cover;
+    background-position: center;
+}
+
+main .discography .album-list .album-card:nth-child(2) {
+    background-image: url('assets/images-background/backgroundGUST.png');
+    background-size: cover;
+    background-position: center;
+}
+
+main .discography .album-list .album-card:nth-child(3) {
+    background-image: url('assets/images-background/backgroundalbum3.png');
+    background-size: cover;
+    background-position: center;
+    font-size: 0.95em;
+    line-height: 1.3;
+    margin-bottom: 12px;
+}
+
+main .discography .album-list .album-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+main .discography .album-list .album-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    background-color: #ffffff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main .discography .album-list .album-card h3 {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+main .discography .album-list .album-card:nth-child(3) h3 {
+    font-size: 0.9em;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+main .discography .album-list .album-card p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+main .discography .album-list .album-card:nth-child(3) p {
+    margin-bottom: 10px;
+}
+
+main .discography .album-list .album-card .btn-listen {
+    display: inline-block;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    background-color: plum;
+    box-shadow: 0 3px 10px rgba(221, 160, 221, 0.4);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+main .discography .album-list .album-card .btn-listen:hover {
+    background-color: lightblue;
+    color: #333;
+}
+
+main .discography .album-list .album-card .btn-listen:active {
+    transform: scale(0.95);
+}
+
+main .social-links {
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 12px;
+    margin: 30px 0;
+    background-color: #fff5f8;
+    background-image: radial-gradient(pink 1.5px, transparent 1.5px);
+    background-size: 20px 20px;
+    border: 2px dashed pink;
+}
+
+main .social-links .social-btn {
+    display: inline-block;
+    background-color: pink;
+    color: white;
+    padding: 12px 30px;
+    margin: 10px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    border: 2px solid white;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+main .social-links .social-btn:hover {
+    background-color: lightblue;
+    color: plum;
+}
+
+main .social-links .social-btn:active {
+    transform: scale(0.95);
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: plum;
+    color: white;
+    margin-top: 50px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: lightblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
